@@ -146,25 +146,9 @@ def show_photo(filename):
         return response
     else:
         pass
-
-@app.route('/analysis/<string:filename>', methods=['GET'])
-
-def analysis_photo(filename):
-    file_dir = './upload/'
-    filename = secure_filename(filename)
-    filename_w = file_dir + filename
-    ext = os.path.splitext(filename)[1]
-    renewname = file_dir + os.path.splitext(filename)[0] + '_2D' + ext
-    renewname3d = file_dir + os.path.splitext(filename)[0] + '_3D' + ext
-    csv_dir = file_dir + os.path.splitext(filename)[0] + '.' + 'csv'
-    data_list = [filename_w, renewname, renewname3d,csv_dir]
-    zip_name = file_dir + os.path.splitext(filename)[0] + '.' + 'zip'
-
-    make_zip(zip_name, data_list)
-
-    return send_file(zip_name)
- 
+# analysis
 @app.route('/get/<string:filename>', methods=['GET'])
+
 def analysis_photo(filename):
     file_dir = './upload/'
     filename = secure_filename(filename)
@@ -179,7 +163,8 @@ def analysis_photo(filename):
     make_zip(zip_name, data_list)
 
     return send_file(zip_name)
+  
 
 if __name__ == '__main__':
-   #  app.run(debug=True)
-    app.run(debug=True,host='172.18.115.247',port=40055)  
+   # app.run(debug=True,port=40055)
+   app.run(debug=True,host='172.18.115.247',port=40055)  
