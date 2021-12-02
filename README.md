@@ -8,15 +8,15 @@ http://120.24.150.47:40055/
 
 
  
-| <img src="https://cms.88act.com/res/img/py/aaa_2d.jpg"  /> |
+| <img src="https://cms.88act.com/res/img/py/aaa_2D.jpg"  /> |
 
  
-| <img src="https://cms.88act.com/res/img/py/aaa_3d.jpg"  /> |
+| <img src="https://cms.88act.com/res/img/py/aaa_3D.jpg"  /> |
 
 
-| <img src="https://cms.88act.com/res/img/py/bbb_2d.jpg"  /> |
+| <img src="https://cms.88act.com/res/img/py/bbb_2D.jpg"  /> |
 
  
-| <img src="https://cms.88act.com/res/img/py/bbb_3d.jpg"  /> |
+| <img src="https://cms.88act.com/res/img/py/bbb_3D.jpg"  /> |
 
 
